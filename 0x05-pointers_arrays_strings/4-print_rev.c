@@ -17,6 +17,12 @@ void print_rev(char *s)
 	_putchar('\n');
 }
 
+/**
+ * _strlen - return length of string
+ * @s: pointer to string
+ *
+ * Return: length of string
+ */
 int _strlen(char *s)
 {
 	int len, i;
