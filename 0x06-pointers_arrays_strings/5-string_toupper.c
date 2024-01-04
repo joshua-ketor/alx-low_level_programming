@@ -1,10 +1,10 @@
 #include "main.h"
 
-#define LOWER 32;
+#define LOWER 32
 
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase
- * @c: pointer to string
+ * @s: pointer to string
  *
  * Return: pointer to result string c
  */
