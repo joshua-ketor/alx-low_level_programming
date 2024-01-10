@@ -10,7 +10,7 @@ int _strlen(char *s)
 {
 	int len = 0;
 
-	if(*s)
+	if (*s)
 	{
 		len++;
 		len += _strlen(s + 1);
@@ -35,7 +35,7 @@ int is_palindrome_helper(char *s, int start, int end)
 		return (1);
 	if (s[start] != s[end])
 		return (0);
-	return is_palindrome_helper(s, start + 1, end - 1);
+	return (is_palindrome_helper(s, start + 1, end - 1));
 }
 /**
  * is_palindrome - check if a string is a palindrome
@@ -47,5 +47,6 @@ int is_palindrome_helper(char *s, int start, int end)
 int is_palindrome(char *s)
 {
 	int len = _strlen(s);
-	return is_palindrome_helper(s, 0, len - 1);
+
+	return (is_palindrome_helper(s, 0, len - 1));
 }
