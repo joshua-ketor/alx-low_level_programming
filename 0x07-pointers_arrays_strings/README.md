@@ -1,1 +1,1 @@
-This directory contains all tasks for **0x06. C - More pointers, arrays and strings**
+This directory contains all tasks for **0x07. C - Even more pointers, arrays and strings**
