@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * change - calculate the minimum number of coins to make change for an amount of money
+ * change - calculate the minimum number of coins to make
+ * change for an amount of money
  * @cents: amount of cents you need to give back
  *
  * Return: Minimum number of coins to make change
@@ -17,7 +18,7 @@ int change(int cents)
 	while (cents >= 25)
 	{
 		++ch;
-		cents -=25;
+		cents -= 25;
 	}
 	while (cents >= 10)
 	{
@@ -44,7 +45,8 @@ int change(int cents)
 
 
 /**
- * main - print the minimum number of coins to make change for an amount of money
+ * main - print the minimum number of coins
+ * to make change for an amount of money
  * @argc: argument counter
  * @argv: argument vector
  *
