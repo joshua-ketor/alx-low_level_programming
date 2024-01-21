@@ -2,7 +2,7 @@
 
 /**
  * _strlen - lenght of string
- * @str: pointer to string
+ * @s: pointer to string
  *
  * Return: string length
  */
@@ -10,7 +10,7 @@ int _strlen(char *s)
 {
 	int len = 0;
 
-	while(s[len])
+	while (s[len])
 		len++;
 	return (len);
 }
@@ -31,7 +31,7 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 	size = _strlen(str);
-	nstr = malloc(size * sizeof(char));
+	nstr = malloc((size + 1) * sizeof(char));
 	if (nstr == NULL)
 		return (NULL);
 	for (i = 0; i < size; i++)
