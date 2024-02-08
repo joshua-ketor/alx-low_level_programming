@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_binary - print the binary representation of a number
+ * print_binary_helper - actual print_binary function
  * @n: number to print
  *
  * Return: Nothing
@@ -19,7 +19,13 @@ void print_binary_helper(unsigned long int n)
 		_putchar('0');
 }
 
-void print_binary(unsigned long int n) 
+/**
+ * print_binary - print the binary representation of a number
+ * @n: number to print
+ *
+ * Return: Nothing
+ */
+void print_binary(unsigned long int n)
 {
 	if (n == 0)
 	{
