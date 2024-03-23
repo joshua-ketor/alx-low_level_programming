@@ -2,8 +2,6 @@
 
 void function(void) __attribute__ ((constructor));
 
-void function(void) __attribute__ ((destructor));
-
 /**
  * function - print a string before the main function runs
  *
