@@ -38,14 +38,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(cp_value);
 		return (0);
 	}
-
 	new->key = strdup(key);
 	if (new->key == NULL)
 	{
 		free(new);
 		return (0);
 	}
-
 	new->value = cp_value;
 	new->next = ht->array[index];
 	ht->array[index] = new;
